@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(26, 25, 25);
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    color: white;
+    transition: 4ms;
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 1rem;
+    animation: fromTop 1.5s backwards;
+    animation-delay: 1.5s;
+}
+img{
+    width: 4cm;
+    border-radius: 50%;
+    border: 0.1cm solid;
+    border-color: white;
+    transition: 1s;
+    margin-bottom: 15%;
+    margin-left: 26%;
+    animation: fromTop .9s backwards;
+    animation-delay: .9s;
+}
+a{
+    border: 0.01cm solid;
+    color: azure;
+    padding: 4%;
+    text-align: center;
+    display: grid;
+    transition: 0.8s;
+    margin: 10px;
+    width: 300px;
+    text-decoration: none;
+    animation: fromRight 1s backwards;
+    animation-delay: 1s;
+}
+a:hover{
+    color: rgb(49, 233, 233);
+    transform: scale(110%);
+}
+p:hover{
+    color: rgb(49, 233, 233);
+}
+img:hover{
+    border-color: rgb(49, 233, 233);
+    transform: scale(110%);
+}
+.content{
+    padding: 14rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    animation: fromLeft .9s backwards;
+    animation-delay: .9s;
+}
+
+@keyframes fromTop {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromRight {
+    from{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
